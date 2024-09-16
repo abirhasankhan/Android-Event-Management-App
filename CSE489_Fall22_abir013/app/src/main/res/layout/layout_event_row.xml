@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       android:background="#FFC300">
+       <TableRow
+           android:layout_weight="1">
+           <TextView
+               android:id="@+id/tvEventName"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="Event Name"
+               android:textSize="20sp"
+               android:textAlignment="textStart"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+
+           <TextView
+               android:id="@+id/tvEventDate"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="Event Date"
+               android:textSize="20sp"
+               android:textAlignment="textStart"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+
+       </TableRow>
+
+       <TableRow
+           android:layout_weight="1">
+           <TextView
+               android:id="@+id/tvEventPlace"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="Event Place"
+               android:textSize="20sp"
+               android:textAlignment="textStart"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+       </TableRow>
+   </TableLayout>
+
+</LinearLayout>

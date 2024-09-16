@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3FF33"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <TableLayout
+        android:id="@+id/TL01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingStart="10dp">
+
+        <TableRow
+            android:id="@+id/TR01_TL01">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Name:"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TR02_TL01">
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Email:"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:inputType="textEmailAddress"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TR03_TL01">
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Phone:"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:inputType="phone"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TR04_TL01">
+            <TextView
+                android:id="@+id/tvUserId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="User Id:"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/etUserId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:inputType="number"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TR05_TL01">
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Password:"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:inputType="textPassword"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TR06_TL01">
+            <TextView
+                android:id="@+id/tvReEPass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Re-enter Password:"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/etReEPass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:inputType="textPassword"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/LL01_TL01"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkboxRUI"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Remember user ID"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <CheckBox
+                android:id="@+id/checkboxRPass"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Remember Password"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/TR08_TL01">
+            <TextView
+                android:id="@+id/tvAHA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Already have account?"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Login"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#1468BB"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#D8E233"
+            android:text="Exit"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="#D8E233"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
